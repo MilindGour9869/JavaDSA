@@ -1,18 +1,39 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 
-public class Main {
+public   class Main {
     public static void main(String args[])
     {
-       int a[] = new int[3];
-       a[0]=3;
-       a[1]=2;
-       a[2]=1;
 
-       Arrays.sort(a);
+        A a = new A(2);
+        A b = new A(3);
+        b=a;
+        System.out.println(b);
+        System.out.println(a);
 
 
-       System.out.println(a[0]);
 
+       
 
     }
+
+}
+
+class A {
+    int n;
+    A(int n)
+    {
+        this.n=n;
+
+    }
+
+}
+class B {
+    int n;
+    B(int n)
+    {
+        this.n=n;
+        
+    }
+
 }
